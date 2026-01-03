@@ -1,1 +1,124 @@
-<p>Hello Spomenche!</p>
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Style Guide Demo</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Pacifico&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <style>
+    /* Design tokens */
+    :root {
+      --primary-color: #E88CA1;
+      --accent-color: #D4AF37;
+      --bg-color: #FFF5E9;
+      --radius: 16px;
+      --shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--bg-color);
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+    }
+
+    h1, h2 {
+      font-family: 'Pacifico', cursive;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Buttons */
+    .btn {
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: 'Pacifico', cursive;
+      margin-right: 1rem;
+    }
+
+    .btn:hover {
+      box-shadow: 0 0 0 2px var(--accent-color) inset;
+      filter: brightness(0.9);
+    }
+
+    /* Card */
+    .card {
+      background-color: white;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1rem;
+      width: 200px;
+      text-align: center;
+      transition: all 0.3s ease;
+      margin-top: 1rem;
+    }
+
+    .card:hover {
+      border: 2px solid var(--accent-color);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: var(--radius);
+    }
+
+    /* Icons */
+    .icon {
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+      color: #333;
+    }
+
+    .icon.gold {
+      color: var(--accent-color);
+    }
+
+  </style>
+</head>
+<body>
+  <h1>UI Style Guide (кратък)</h1>
+
+  <h2>Бутони</h2>
+  <button class="btn">Купи сега</button>
+  <button class="btn">Купи сега</button>
+
+  <h2>Карти (продукти/категории)</h2>
+  <div class="card">
+    <img src="https://via.placeholder.com/150" alt="Продукт">
+    <p>Продукт</p>
+    <p>45,00 лв.</p>
+    <button class="btn">Виж повече</button>
+  </div>
+
+  <h2>Икони</h2>
+  <span class="icon gold">&#9733;</span> <!-- gold star -->
+  <span class="icon">&#128722;</span> <!-- cart -->
+  <span class="icon">&#128247;</span> <!-- camera -->
+
+  <h2>Design Tokens</h2>
+  <ul>
+    <li>Primary color: <span style="background-color: var(--primary-color); padding: 0 0.5rem;">#E88CA1</span></li>
+    <li>Accent color: <span style="background-color: var(--accent-color); padding: 0 0.5rem;">#D4AF37</span></li>
+    <li>Background: <span style="background-color: var(--bg-color); padding: 0 0.5rem;">#FFF5E9</span></li>
+    <li>Radius: 16px</li>
+    <li>Shadow: soft / low contrast</li>
+  </ul>
+</body>
+</html>
