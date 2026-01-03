@@ -1,0 +1,1 @@
+import{Aa as o,Ua as p,Va as s,hb as n}from"./chunk-HHHBE6IG.js";var a=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=o({type:t,selectors:[["app-shop"]],decls:2,vars:0,template:function(e,m){e&1&&(p(0,"p"),n(1,"shop works!"),s())},encapsulation:2})};export{a as Shop};
