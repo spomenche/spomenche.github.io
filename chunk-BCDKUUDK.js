@@ -1,1 +1,0 @@
-import{Aa as o,Ua as a,Va as i,hb as n}from"./chunk-HHHBE6IG.js";var r=class e{static \u0275fac=function(t){return new(t||e)};static \u0275cmp=o({type:e,selectors:[["app-product-detail"]],decls:2,vars:0,template:function(t,d){t&1&&(a(0,"p"),n(1,"product-detail works!"),i())},encapsulation:2})};export{r as ProductDetail};
